@@ -23,16 +23,22 @@ class TodoListViewController: UIViewController {
         super.viewDidLoad()
         
         // TODO: 키보드 디텍션
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillShowNotification, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         // TODO: 데이터 불러오기
         todoListViewModel.loadTasks()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
     }
     
     @IBAction func isTodayButtonTapped(_ sender: Any) {
         // TODO: 투데이 버튼 토글 작업
-        
+        isTodayButton.isSelected = !isTodayButton.isSelected
     }
     
     @IBAction func addTaskButtonTapped(_ sender: Any) {
@@ -42,6 +48,9 @@ class TodoListViewController: UIViewController {
     }
     
     // TODO: BG 탭했을때, 키보드 내려오게 하기
+    @IBAction func tapBG(_ sender: Any) {
+        inputTextField.resignFirstResponder()
+    }
 }
 
 extension TodoListViewController {
@@ -49,6 +58,14 @@ extension TodoListViewController {
         guard let userInfo = noti.userInfo else { return }
         // TODO: 키보드 높이에 따른 인풋뷰 위치 변경
         
+        guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        
+        if noti.name == UIResponder.keyboardWillShowNotification {
+            let adjustmentHeight = keyboardFrame.height - view.safeAreaInsets.bottom
+            inputViewBottom.constant = adjustmentHeight
+        } else {
+            inputViewBottom.constant = 0
+        }
     }
 }
 
