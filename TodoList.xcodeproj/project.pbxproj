@@ -63,12 +63,12 @@
 				16D52CB82536B3D700FDBF4B /* AppDelegate.swift */,
 				16D52CBA2536B3D700FDBF4B /* SceneDelegate.swift */,
 				16D52CBE2536B3D700FDBF4B /* Main.storyboard */,
-				16D52CC12536B3D800FDBF4B /* Assets.xcassets */,
-				16D52CC32536B3D800FDBF4B /* LaunchScreen.storyboard */,
-				16D52CC62536B3D800FDBF4B /* Info.plist */,
 				16D52CCF2536B74C00FDBF4B /* TodoListViewController.swift */,
 				16D52CD22536B77800FDBF4B /* Todo.swift */,
 				16D52CD52536B79C00FDBF4B /* Storage.swift */,
+				16D52CC12536B3D800FDBF4B /* Assets.xcassets */,
+				16D52CC32536B3D800FDBF4B /* LaunchScreen.storyboard */,
+				16D52CC62536B3D800FDBF4B /* Info.plist */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
