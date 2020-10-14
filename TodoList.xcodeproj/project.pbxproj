@@ -15,6 +15,8 @@
 		16D52CD02536B74C00FDBF4B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D52CCF2536B74C00FDBF4B /* TodoListViewController.swift */; };
 		16D52CD32536B77800FDBF4B /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D52CD22536B77800FDBF4B /* Todo.swift */; };
 		16D52CD62536B79C00FDBF4B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D52CD52536B79C00FDBF4B /* Storage.swift */; };
+		16D52CDB2536FD8400FDBF4B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 16D52CDA2536FD8400FDBF4B /* README.md */; };
+		16D52CDF2536FDAF00FDBF4B /* AppRun.mov in Resources */ = {isa = PBXBuildFile; fileRef = 16D52CDE2536FDAE00FDBF4B /* AppRun.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		16D52CCF2536B74C00FDBF4B /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		16D52CD22536B77800FDBF4B /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		16D52CD52536B79C00FDBF4B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		16D52CDA2536FD8400FDBF4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16D52CDE2536FDAE00FDBF4B /* AppRun.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = AppRun.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 		16D52CAC2536B3D700FDBF4B = {
 			isa = PBXGroup;
 			children = (
+				16D52CDA2536FD8400FDBF4B /* README.md */,
+				16D52CDE2536FDAE00FDBF4B /* AppRun.mov */,
 				16D52CB72536B3D700FDBF4B /* TodoList */,
 				16D52CB62536B3D700FDBF4B /* Products */,
 			);
@@ -132,6 +138,8 @@
 			files = (
 				16D52CC52536B3D800FDBF4B /* LaunchScreen.storyboard in Resources */,
 				16D52CC22536B3D800FDBF4B /* Assets.xcassets in Resources */,
+				16D52CDF2536FDAF00FDBF4B /* AppRun.mov in Resources */,
+				16D52CDB2536FD8400FDBF4B /* README.md in Resources */,
 				16D52CC02536B3D700FDBF4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
